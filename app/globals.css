@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 240, 240, 240;
+
+  /* Content width variables */
+  --content-width: 110%;
+  --content-max-width: 48rem;  /* 3xl = 48rem */
+  --narrow-width: 75%;
+  --narrow-max-width: 32rem;  /* 2xl = 42rem */
+}
+
+@layer components {
+  /* Main content width - use for most blocks */
+  .content-width {
+    @apply w-[110%] max-w-4xl mx-auto;  /* Increased from w-[90%] and max-w-3xl */
+  }
+
+  /* Container that takes full width of parent - use for flex containers */
+  .full-width {
+    @apply w-full;
+  }
+
+  /* Narrow width for special sections */
+  .narrow-width {
+    @apply w-[75%] max-w-2xl mx-auto;
+  }
+
+  /* Content block styling */
+  .content-block {
+    @apply p-6 rounded-xl backdrop-blur-md bg-white/30 shadow-lg border border-white/50;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+  min-height: 100vh;
+}

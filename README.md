@@ -1,6 +1,7 @@
 # GPT-2 Architecture Explorer
 
 An interactive web application that guides users through the GPT-2 model architecture, providing detailed explanations, mathematical formulas, and sample data for each component.
+Website is hosted at: https://llm-explanation.vercel.app/
 
 ## Features
 
